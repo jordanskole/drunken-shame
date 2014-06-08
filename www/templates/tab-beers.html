@@ -1,7 +1,7 @@
 <ion-view title="Beers">
   <ion-content class="has-header">
     <ion-list>
-      <ion-item ng-repeat="beer in beers" type="item-text-wrap" href="#/tab/beer/{{beer.id}}">
+      <ion-item ng-repeat="(beerId, beer) in beers" type="item-text-wrap" href="#/tab/beer/{{beerId}}">
         {{beer.name}}
         <span class="item-note">
           {{beer.type}}

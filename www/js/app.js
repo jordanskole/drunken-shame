@@ -58,6 +58,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
     })
 
+    .state('tab.beer-detail', {
+      url: '/beer/:beerId',
+      views: {
+        'tab-beers': {
+          templateUrl: 'templates/beer-detail.html',
+          controller: 'BeerDetailCtrl'
+        }
+      }
+    })
+
     .state('tab.friends', {
       url: '/friends',
       views: {
@@ -91,4 +101,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 
-});
+})
+
+/* declare a constant to keep things clean */
+.constant('FIREBASE_URL', 'https://mi-beer-guide.firebaseio.com/');
