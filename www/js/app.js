@@ -98,6 +98,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
     })
 
+    .state('tab.register', {
+      url: '/register',
+      views: {
+        'tab-register': {
+          templateUrl: 'templates/tab-register.html',
+          controller: 'AuthCtrl'
+        }
+      }
+    })
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 

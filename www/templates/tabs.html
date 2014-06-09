@@ -21,8 +21,13 @@
   </ion-tab>
 
   <!-- Account Tab -->
-  <ion-tab title="Account" icon="icon ion-gear-b" href="#/tab/account">
+  <ion-tab ng-show="true" title="Account" icon="icon ion-ios7-person" href="#/tab/account">
     <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Register Tab -->
+  <ion-tab ng-hide="true" title="Register" icon="icon ion-ios7-personadd-outline" href="#/tab/register">
+    <ion-nav-view name="tab-register"></ion-nav-view>
   </ion-tab>
 
 
