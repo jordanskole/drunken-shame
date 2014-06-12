@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 var app = angular.module('miBeerGuide', ['ionic', 'ngResource', 'firebase']);
 
-app.run(function($ionicPlatform) {
+app.run(function($ionicPlatform, $rootScope, Auth) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -18,6 +18,9 @@ app.run(function($ionicPlatform) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+    $rootScope.signedIn = function() {
+      return Auth.signedIn();
+    };
   });
 });
 
