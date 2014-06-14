@@ -5,18 +5,19 @@
 -->
 <ion-tabs class="tabs-icon-top">
 
-  <!-- Home Tab -->
-  <ion-tab title="Dashboard" icon="icon ion-home" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
-  </ion-tab>
-
   <!-- Beers Tab -->
-  <ion-tab title="Beers" icon="icon ion-beer" href="#/tab/beers">
+  <ion-tab title="Beers" icon="icon icon-beer-ionic" href="#/tab/beers">
     <ion-nav-view name="tab-beers"></ion-nav-view>
   </ion-tab>
 
+  <!-- Home Tab -->
+  <ion-tab title="Newsfeed" icon="icon ion-ios7-paper-outline" href="#/tab/dash">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
+
   <!-- Friends Tab -->
-  <ion-tab title="Friends" icon="icon ion-heart" href="#/tab/friends">
+  <ion-tab title="Friends" icon="icon ion-ios7-paw-outline" href="#/tab/friends">
     <ion-nav-view name="tab-friends"></ion-nav-view>
   </ion-tab>
   <div ng-switch="signedIn()">
