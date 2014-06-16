@@ -1,7 +1,13 @@
-app.controller('BeersCtrl', function($scope) {
-  $scope.beers = [
-    { id: 0, name: "Dirty Blonde Ale", type:"Blonde" },
-    { id: 1, name: "Grand Circus IPA", type:"IPA" },
-    { id: 2, name: "Conniption Fit", type:"Double IPA" }
-  ];
+app.controller('BeersCtrl', function($scope, Beer) {
+  $scope.beers = Beer.all();
+
+  $scope.favorite = function() {
+    if(!signedIn()) {
+      $state.go('tab.login');
+    }
+  };
+});
+
+app.controller('BeerDetailCtrl', function($scope, $stateParams, Beer) {
+  $scope.beer = Beer.find($stateParams.beerId);
 });

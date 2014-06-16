@@ -4,27 +4,32 @@
   navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top">
-
-
-  <!-- Home Tab -->
-  <ion-tab title="Dashboard" icon="icon ion-home" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
-  </ion-tab>
-
+  <ion-nav-bar class="bar-positive">
   <!-- Beers Tab -->
-  <ion-tab title="Beers" icon="icon ion-beer" href="#/tab/beers">
+  <ion-tab title="Beers" icon="icon icon-beer-ionic" href="#/tab/beers">
     <ion-nav-view name="tab-beers"></ion-nav-view>
   </ion-tab>
 
+  <!-- Home Tab -->
+  <ion-tab title="Newsfeed" icon="icon ion-ios7-paper-outline" href="#/tab/dash">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
   <!-- Friends Tab -->
-  <ion-tab title="Friends" icon="icon ion-heart" href="#/tab/friends">
+  <ion-tab ng-if="signedIn()" title="Friends" icon="icon ion-ios7-paw-outline" href="#/tab/friends">
     <ion-nav-view name="tab-friends"></ion-nav-view>
   </ion-tab>
 
-  <!-- Account Tab -->
-  <ion-tab title="Account" icon="icon ion-gear-b" href="#/tab/account">
-    <ion-nav-view name="tab-account"></ion-nav-view>
-  </ion-tab>
+  <div ng-switch="signedIn()">
+    <!-- Account Tab -->
+    <ion-tab ng-switch-default title="Account" icon="icon ion-ios7-person" href="#/tab/account">
+      <ion-nav-view name="tab-account"></ion-nav-view>
+    </ion-tab>
 
-
+    <!-- Register Tab -->
+    <ion-tab ng-switch-when="false" title="Login" icon="icon ion-ios7-personadd-outline" href="#/tab/register">
+      <ion-nav-view name="tab-register"></ion-nav-view>
+    </ion-tab>
+  </div>
+  </ion-nav-bar>
 </ion-tabs>

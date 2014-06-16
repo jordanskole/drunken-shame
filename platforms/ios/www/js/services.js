@@ -22,17 +22,3 @@ app.factory('Friends', function() {
     }
   }
 });
-
-/**
- * A simple example service that returns some data.
- */
-app.factory('Beers', function(){
-  var beers = [
-    { id: 0, name: "Coniption Fit" },
-    { id: 1, name: "Dirty Blonde Ale" }
-  ];
-});
-
-/**
- * A simple example service that returns some data.
- */

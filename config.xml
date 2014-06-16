@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ionicframework.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+    <name>MI Beer Guide</name>
     <description>
-        An Ionic Framework and Cordova project.
+        A social directory of all of the craft beers and ales produced in Michigan.
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="jordan@skole.us" href="http://jordanskole.com">
+      Jordan Skole
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -14,7 +14,7 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
 
-    <!-- Don't store local date in an iCloud backup. Turn this to "cloud" to enable storage 
+    <!-- Don't store local date in an iCloud backup. Turn this to "cloud" to enable storage
          to be sent to iCloud. Note: enabling this could result in Apple rejecting your app.
     -->
     <preference name="BackupWebStorage" value="none" />
@@ -22,4 +22,16 @@
     <feature name="StatusBar">
       <param name="ios-package" value="CDVStatusBar" onload="true" />
     </feature>
+
+    <icon src="icon-57-2x.png" />
+
+    <!-- iPhone / iPod Touch  -->
+    <icon src="icon-57.png" gap:platform="ios" width="60" height="60" />
+    <icon src="icon-57-2x.png" gap:platform="ios" width="120" height="120" />
+
+    <gap:splash src="splash.png" />
+
+    <!-- iPhone and iPod touch -->
+    <gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="splash-2x.png" gap:platform="ios" width="640" height="960" />
 </widget>

@@ -4,7 +4,7 @@
   navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top">
-
+  <ion-nav-bar class="bar-positive">
   <!-- Beers Tab -->
   <ion-tab title="Beers" icon="icon icon-beer-ionic" href="#/tab/beers">
     <ion-nav-view name="tab-beers"></ion-nav-view>
@@ -15,11 +15,11 @@
     <ion-nav-view name="tab-dash"></ion-nav-view>
   </ion-tab>
 
-
   <!-- Friends Tab -->
-  <ion-tab title="Friends" icon="icon ion-ios7-paw-outline" href="#/tab/friends">
+  <ion-tab ng-if="signedIn()" title="Friends" icon="icon ion-ios7-paw-outline" href="#/tab/friends">
     <ion-nav-view name="tab-friends"></ion-nav-view>
   </ion-tab>
+
   <div ng-switch="signedIn()">
     <!-- Account Tab -->
     <ion-tab ng-switch-default title="Account" icon="icon ion-ios7-person" href="#/tab/account">
@@ -31,6 +31,5 @@
       <ion-nav-view name="tab-register"></ion-nav-view>
     </ion-tab>
   </div>
-
-
+  </ion-nav-bar>
 </ion-tabs>

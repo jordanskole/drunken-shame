@@ -1,33 +1,58 @@
-2014-06-02 21:52:57.830 HelloCordova[14137:70b] Multi-tasking -> Device: YES, App: YES
-2014-06-02 21:52:57.856 HelloCordova[14137:70b] Unlimited access to network resources
-2014-06-02 21:52:58.037 HelloCordova[14137:70b] [CDVTimer][keyboard] 0.114977ms
-2014-06-02 21:52:58.039 HelloCordova[14137:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
-2014-06-02 21:52:58.039 HelloCordova[14137:70b] [CDVTimer][statusbar] 0.523984ms
-2014-06-02 21:52:58.040 HelloCordova[14137:70b] [CDVTimer][TotalPluginStartup] 3.343999ms
-2014-06-02 21:52:58.188 HelloCordova[14137:70b] Resetting plugins due to page load.
-2014-06-02 21:52:58.435 HelloCordova[14137:70b] Finished load of: file:///Users/jordan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/DECB7179-CEC5-41E4-969D-97832F28B7C0/HelloCordova.app/www/index.html#/tab/dash
-2014-06-04 12:59:16.862 HelloCordova[21478:70b] Multi-tasking -> Device: YES, App: YES
-2014-06-04 12:59:16.915 HelloCordova[21478:70b] Unlimited access to network resources
-2014-06-04 12:59:17.302 HelloCordova[21478:70b] [CDVTimer][keyboard] 0.069976ms
-2014-06-04 12:59:17.302 HelloCordova[21478:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
-2014-06-04 12:59:17.303 HelloCordova[21478:70b] [CDVTimer][statusbar] 0.497997ms
-2014-06-04 12:59:17.303 HelloCordova[21478:70b] [CDVTimer][TotalPluginStartup] 1.659989ms
-2014-06-04 12:59:17.533 HelloCordova[21478:70b] Resetting plugins due to page load.
-2014-06-04 12:59:17.942 HelloCordova[21478:70b] Finished load of: file:///Users/jordan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/DECB7179-CEC5-41E4-969D-97832F28B7C0/HelloCordova.app/www/index.html#/tab/dash
-2014-06-04 13:00:44.134 HelloCordova[21937:70b] Multi-tasking -> Device: YES, App: YES
-2014-06-04 13:00:44.155 HelloCordova[21937:70b] Unlimited access to network resources
-2014-06-04 13:00:44.186 HelloCordova[21937:70b] [CDVTimer][keyboard] 0.097990ms
-2014-06-04 13:00:44.187 HelloCordova[21937:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
-2014-06-04 13:00:44.188 HelloCordova[21937:70b] [CDVTimer][statusbar] 0.528991ms
-2014-06-04 13:00:44.188 HelloCordova[21937:70b] [CDVTimer][TotalPluginStartup] 1.868963ms
-2014-06-04 13:00:44.318 HelloCordova[21937:70b] Resetting plugins due to page load.
-2014-06-04 13:00:44.601 HelloCordova[21937:70b] Finished load of: file:///Users/jordan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/DECB7179-CEC5-41E4-969D-97832F28B7C0/HelloCordova.app/www/index.html#/tab/dash
-2014-06-04 13:01:05.154 HelloCordova[21937:70b] Received memory warning.
-2014-06-04 13:01:57.402 HelloCordova[22211:70b] Multi-tasking -> Device: YES, App: YES
-2014-06-04 13:01:57.421 HelloCordova[22211:70b] Unlimited access to network resources
-2014-06-04 13:01:57.461 HelloCordova[22211:70b] [CDVTimer][keyboard] 0.099003ms
-2014-06-04 13:01:57.461 HelloCordova[22211:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
-2014-06-04 13:01:57.468 HelloCordova[22211:70b] [CDVTimer][statusbar] 6.039977ms
-2014-06-04 13:01:57.471 HelloCordova[22211:70b] [CDVTimer][TotalPluginStartup] 10.331988ms
-2014-06-04 13:01:57.686 HelloCordova[22211:70b] Resetting plugins due to page load.
-2014-06-04 13:01:57.949 HelloCordova[22211:70b] Finished load of: file:///Users/jordan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/DECB7179-CEC5-41E4-969D-97832F28B7C0/HelloCordova.app/www/index.html#/tab/dash
+2014-06-15 22:15:17.196 MI Beer Guide[87329:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-15 22:15:17.227 MI Beer Guide[87329:70b] Unlimited access to network resources
+2014-06-15 22:15:17.261 MI Beer Guide[87329:70b] Fix applied for database locations?: YES
+2014-06-15 22:15:17.380 MI Beer Guide[87329:70b] CDVPlugin class IonicKeyboard (pluginName: keyboard) does not exist.
+2014-06-15 22:15:17.381 MI Beer Guide[87329:70b] [CDVTimer][keyboard] 0.738025ms
+2014-06-15 22:15:17.382 MI Beer Guide[87329:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-15 22:15:17.382 MI Beer Guide[87329:70b] [CDVTimer][statusbar] 0.588000ms
+2014-06-15 22:15:17.383 MI Beer Guide[87329:70b] [CDVTimer][TotalPluginStartup] 2.553999ms
+2014-06-15 22:15:17.597 MI Beer Guide[87329:70b] Resetting plugins due to page load.
+2014-06-15 22:15:17.973 MI Beer Guide[87329:70b] Finished load of: file:///Users/jordan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/37516CA0-A4C4-4121-9FBF-AC1D43F0136B/MI%20Beer%20Guide.app/www/index.html#/tab/beers
+2014-06-15 22:15:18.116 MI Beer Guide[87329:70b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-06-15 22:15:18.117 MI Beer Guide[87329:70b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-15 22:15:18.117 MI Beer Guide[87329:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "Device659912732",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+2014-06-15 22:20:41.179 MI Beer Guide[88031:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-15 22:20:41.187 MI Beer Guide[88031:70b] Unlimited access to network resources
+2014-06-15 22:20:41.212 MI Beer Guide[88031:70b] CDVPlugin class IonicKeyboard (pluginName: keyboard) does not exist.
+2014-06-15 22:20:41.213 MI Beer Guide[88031:70b] [CDVTimer][keyboard] 0.683963ms
+2014-06-15 22:20:41.213 MI Beer Guide[88031:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-15 22:20:41.214 MI Beer Guide[88031:70b] [CDVTimer][statusbar] 0.639021ms
+2014-06-15 22:20:41.215 MI Beer Guide[88031:70b] [CDVTimer][TotalPluginStartup] 2.478004ms
+2014-06-15 22:20:41.321 MI Beer Guide[88031:70b] Resetting plugins due to page load.
+2014-06-15 22:20:41.510 MI Beer Guide[88031:70b] Finished load of: file:///Users/jordan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/37516CA0-A4C4-4121-9FBF-AC1D43F0136B/MI%20Beer%20Guide.app/www/index.html#/tab/beers
+2014-06-15 22:20:41.630 MI Beer Guide[88031:70b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-06-15 22:20:41.631 MI Beer Guide[88031:70b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-15 22:20:41.631 MI Beer Guide[88031:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "Device1962764627",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+2014-06-15 22:22:49.308 MI Beer Guide[88624:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-15 22:22:49.315 MI Beer Guide[88624:70b] Unlimited access to network resources
+2014-06-15 22:22:49.345 MI Beer Guide[88624:70b] CDVPlugin class IonicKeyboard (pluginName: keyboard) does not exist.
+2014-06-15 22:22:49.346 MI Beer Guide[88624:70b] [CDVTimer][keyboard] 0.622988ms
+2014-06-15 22:22:49.346 MI Beer Guide[88624:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-15 22:22:49.347 MI Beer Guide[88624:70b] [CDVTimer][statusbar] 0.486970ms
+2014-06-15 22:22:49.347 MI Beer Guide[88624:70b] [CDVTimer][TotalPluginStartup] 2.034009ms
+2014-06-15 22:22:49.395 MI Beer Guide[88624:70b] Resetting plugins due to page load.
+2014-06-15 22:22:49.612 MI Beer Guide[88624:70b] Finished load of: file:///Users/jordan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/37516CA0-A4C4-4121-9FBF-AC1D43F0136B/MI%20Beer%20Guide.app/www/index.html#/tab/beers
+2014-06-15 22:22:49.712 MI Beer Guide[88624:70b] CDVPlugin class CDVDevice (pluginName: Device) does not exist.
+2014-06-15 22:22:49.712 MI Beer Guide[88624:70b] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-15 22:22:49.712 MI Beer Guide[88624:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "Device423883527",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]

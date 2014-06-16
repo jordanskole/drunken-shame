@@ -5,9 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-var app = angular.module('miBeerGuide', ['ionic']);
+var app = angular.module('miBeerGuide', ['ionic', 'ngResource', 'firebase']);
 
-app.run(function($ionicPlatform) {
+app.run(function($ionicPlatform, $rootScope, Auth) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -18,6 +18,9 @@ app.run(function($ionicPlatform) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+    $rootScope.signedIn = function() {
+      return Auth.signedIn();
+    };
   });
 });
 
@@ -58,6 +61,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
     })
 
+    .state('tab.beer-detail', {
+      url: '/beer/:beerId',
+      views: {
+        'tab-beers': {
+          templateUrl: 'templates/beer-detail.html',
+          controller: 'BeerDetailCtrl'
+        }
+      }
+    })
+
     .state('tab.friends', {
       url: '/friends',
       views: {
@@ -88,7 +101,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
     })
 
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+    .state('tab.register', {
+      url: '/register',
+      views: {
+        'tab-register': {
+          templateUrl: 'templates/tab-register.html',
+          controller: 'AuthCtrl'
+        }
+      }
+    })
 
-});
+  // if none of the above states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/tab/beers');
+
+})
+
+/* declare a constant to keep things clean */
+.constant('FIREBASE_URL', 'https://mi-beer-guide.firebaseio.com/');

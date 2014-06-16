@@ -1,0 +1,27 @@
+<ion-view title="{{action}}">
+  <ion-content class="has-header padding">
+    <form ng-submit="login()" ng-controller="AuthCtrl">
+      <div class="card">
+          <label class="item item-input">
+            <input type="email" ng-model="user.email" placeholder="Email">
+          </label>
+          <label class="item item-input">
+            <input type="password" ng-model="user.password" placeholder="Password">
+          </label>
+      </div>
+      <ul class="list list-inset">
+        <li class="item item-toggle">
+          Are you a new user?
+          <label class="toggle">
+             <input ng-model="action" ng-true-value="Register" ng-false-value="Login" type="checkbox" >
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+          </label>
+        </li>
+      </ul>
+      <input type="submit" value="{{action}}" class="button button-outline button-block button-positive" />
+    </form>
+    {{ user.email }}
+  </ion-content>
+</ion-view>
