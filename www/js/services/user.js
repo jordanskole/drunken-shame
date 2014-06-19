@@ -1,24 +1,52 @@
 'use strict';
 
-app.factory('User', function($firebase, FIREBASE_URL, Auth) {
+app.factory('User', function($firebase, $rootScope, FIREBASE_URL, Auth) {
 
   var ref = new Firebase(FIREBASE_URL + 'users');
 
   var users = $firebase(ref);
 
    var User = {
-     create: function(authUser) {
-       users[authUser.md5_hash] = {
+     create: function(authUser, username) {
+       users[username] = {
          md5_hash: authUser.md5_hash,
-         email: authUser.email,
+         username: username,
          admin: false,
          $priority: authUser.uid
-       }
+       };
 
-       users.$save(authUser.md5_hash);
+       users.$save(username).then(function(username) {
+         setCurrentUser(username);
+       });
+     },
+
+     findByUsername: function(username) {
+       if(username) {
+         return users.$child(username);
+       }
+     },
+
+     getCurrent: function() {
+       return $rootScope.currentUser;
+     },
+
+     signedIn: function() {
+       return Auth.signedIn();
      }
    };
 
-   return User;
+  function setCurrentUser(username) {
+    $rootScope.currentUser = User.findByUsername(username);
+  }
+
+  $rootScope.$on('$firebaseSimpleLogin:login', function(e, authUser) {
+    var query = $firebase(ref.startAt(authUser.uid).endAt(authUser.uid));
+
+    query.$on('loaded', function() {
+      setCurrentUser(query.$getIndex()[0]);
+    });
+  });
+
+  return User;
 
 });

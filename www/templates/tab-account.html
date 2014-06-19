@@ -3,6 +3,15 @@
     <button class="button button-icon icon ion-log-out" ng-click="logout()"></button>
   </ion-nav-buttons>
   <ion-content class="has-header padding">
-    <h1>Account</h1>
+    <div class="row">
+      <div class="col col-50 col-offset-25">
+        <img ng-src="http://gravatar.com/avatar/{{ currentUser.md5_hash }}?s=300" class="img-responsive img-circle" />
+      </div>
+    </div>
+    <div class="list list-inset">
+        <div class="item">
+          {{ currentUser.username }}
+        </div>
+    </div>
   </ion-content>
 </ion-view>

@@ -13,17 +13,13 @@
         <p>{{beer.brewery}} &bull; {{beer.style}}</p>
       </div>
       <div class="item tabs tabs-secondary tabs-icon-left">
-        <div class="tab-item" href="#">
-          <i class="icon icon-beer-{{beer.glass}}"></i>
-          | {{beer.glass}}
+        <div ng-click="wishlist()" class="tab-item" href="#">
+          <i class="icon ion-ios7-star-outline"></i>
+          Wishlist
         </div>
-        <div class="tab-item" href="#">
-          <i class="icon icon-beer-can"></i>
-           | {{beer.can}}
-        </div>
-        <div class="tab-item" href="#">
-          <i class="icon icon-beer-bottle"></i>
-          | {{beer.bottle}}
+        <div ng-click="favorite()" class="tab-item" href="#">
+          <i class="icon ion-ios7-heart-outline"></i>
+          Favorite
         </div>
       </div>
       <div class="item">

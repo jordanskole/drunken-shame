@@ -10,7 +10,7 @@ app.controller('AuthCtrl', function($scope, $state, Auth, User) {
   $scope.login = function() {
     if( $scope.action === 'Register') {
       Auth.register($scope.user).then(function(authUser) {
-        User.create(authUser, $scope.user.email);
+        User.create(authUser, $scope.user.username);
         Auth.login($scope.user);
         $state.go('tab.beers');
       });
